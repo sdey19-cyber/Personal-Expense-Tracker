@@ -1,0 +1,2 @@
+FILE_NAME = "transactions.json"
+APP_NAME = "PERSONAL EXPENSE TRACKER"
