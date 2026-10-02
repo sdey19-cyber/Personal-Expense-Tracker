@@ -10,40 +10,54 @@ Personal Expense Tracker is designed to provide a simple and structured way to m
 
 The application supports:
 
-* Adding income and expenses
-* Viewing transaction history
-* Editing and deleting transactions
-* Tracking the current balance
-* Categorizing expenses
-* Generating monthly financial summaries
-* Performing financial analysis using Pandas
-* Generating financial charts using Matplotlib
-* Persisting transaction data using JSON
-* Handling invalid inputs and common data errors
+- Adding income and expenses
+- Viewing transaction history
+- Editing and deleting transactions
+- Tracking the current balance
+- Categorizing expenses
+- Generating monthly financial summaries
+- Performing financial analysis using Pandas
+- Generating financial charts using Matplotlib
+- Persisting transaction data using JSON
+- Handling invalid inputs and common data errors
 
 The application is organized into multiple modules to improve code readability, maintainability, and separation of responsibilities.
+
+## Screenshots
+
+### Main Menu and Add Income
+![Main Menu and Add Income](screenshots/main-menu.png)
+
+### Transactions and Balance
+![Transactions and Balance](screenshots/transactions-balance.png)
+
+### Category Analysis and Monthly Summary
+![Category Analysis and Monthly Summary](screenshots/analysis.png)
+
+### Category-wise Expense Chart
+![Category-wise Expense Chart](screenshots/category-chart.png)
 
 ## Features
 
 ### Transaction Management
 
-* Add income
-* Add expenses
-* View all transactions
-* Edit existing transactions
-* Delete transactions
-* Assign categories to transactions
-* Maintain transaction dates
-* Automatic transaction numbering
+- Add income
+- Add expenses
+- View all transactions
+- Edit existing transactions
+- Delete transactions
+- Assign categories to transactions
+- Maintain transaction dates
+- Automatic transaction numbering
 
 ### Financial Analysis
 
-* Calculate total income
-* Calculate total expenses
-* Calculate current balance
-* Analyze expenses by category
-* Generate monthly summaries
-* Calculate monthly income, expenses, and savings
+- Calculate total income
+- Calculate total expenses
+- Calculate current balance
+- Analyze expenses by category
+- Generate monthly summaries
+- Calculate monthly income, expenses, and savings
 
 ### Data Analysis
 
@@ -51,20 +65,20 @@ Pandas is used to convert transaction data into structured DataFrames and perfor
 
 The analysis includes:
 
-* Income analysis
-* Expense analysis
-* Category-wise analysis
-* Monthly analysis
-* Overall financial summaries
+- Income analysis
+- Expense analysis
+- Category-wise analysis
+- Monthly analysis
+- Overall financial summaries
 
 ### Data Visualization
 
 Matplotlib is used to generate financial visualizations, including:
 
-* Category-wise expense chart
-* Monthly expense chart
-* Income vs. expense chart
-* Expense distribution pie chart
+- Category-wise expense chart
+- Monthly expense chart
+- Income vs. expense chart
+- Expense distribution pie chart
 
 ### Data Persistence
 
@@ -74,23 +88,23 @@ Transaction records are stored in JSON format, allowing data to persist between 
 
 The application includes validation and error-handling mechanisms for:
 
-* Invalid transaction amounts
-* Empty inputs
-* Invalid dates
-* Invalid menu selections
-* Invalid transaction selections
-* JSON file errors
-* Unexpected user input
+- Invalid transaction amounts
+- Empty inputs
+- Invalid dates
+- Invalid menu selections
+- Invalid transaction selections
+- JSON file errors
+- Unexpected user input
 
 ## Technology Stack
 
-| Technology | Purpose                      |
-| ---------- | ---------------------------- |
-| Python     | Core application development |
-| JSON       | Persistent data storage      |
-| Pandas     | Data analysis and processing |
-| Matplotlib | Data visualization           |
-| datetime   | Date handling and validation |
+| Technology | Purpose |
+|---|---|
+| Python | Core application development |
+| JSON | Persistent data storage |
+| Pandas | Data analysis and processing |
+| Matplotlib | Data visualization |
+| datetime | Date handling and validation |
 
 ## Project Structure
 
@@ -106,11 +120,18 @@ Personal_Expense_Tracker/
 ├── pandas_analysis.py
 ├── charts.py
 │
-├── transactions.json
+├── screenshots/
+│   ├── main-menu.png
+│   ├── transactions-balance.png
+│   ├── analysis.png
+│   └── category-chart.png
+│
 ├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
+
+Note: `transactions.json` is generated locally when the application runs and is excluded from the public repository through `.gitignore`.
 
 ## Module Description
 
@@ -134,19 +155,19 @@ Contains input validation functions for amounts, dates, empty inputs, and menu s
 
 Handles transaction-related operations:
 
-* Adding income
-* Adding expenses
-* Viewing transactions
-* Editing transactions
-* Deleting transactions
+- Adding income
+- Adding expenses
+- Viewing transactions
+- Editing transactions
+- Deleting transactions
 
 ### analysis.py
 
 Performs financial calculations and analysis such as:
 
-* Balance calculation
-* Category-wise expense analysis
-* Monthly financial summaries
+- Balance calculation
+- Category-wise expense analysis
+- Monthly financial summaries
 
 ### pandas_analysis.py
 
@@ -155,10 +176,6 @@ Uses Pandas to perform structured analysis of transaction data.
 ### charts.py
 
 Uses Matplotlib to generate financial data visualizations.
-
-### transactions.json
-
-Stores transaction records for persistent local data storage.
 
 ## Application Workflow
 
@@ -194,19 +211,19 @@ Start Application
 
 ### Prerequisites
 
-* Python 3.x
-* pip
+- Python 3.x
+- pip
 
 ### Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/sdey19-cyber/Personal-Expense-Tracker.git
 ```
 
 ### Navigate to the Project Directory
 
 ```bash
-cd Personal_Expense_Tracker
+cd Personal-Expense-Tracker
 ```
 
 ### Install Dependencies
@@ -272,21 +289,21 @@ Displays the proportion of expenses across different categories.
 
 This project applies the following Python concepts:
 
-* Variables and data types
-* Conditional statements
-* Loops
-* Functions
-* Lists and dictionaries
-* File handling
-* JSON serialization and deserialization
-* Exception handling
-* Input validation
-* Date handling
-* Modular programming
-* Data processing
-* Pandas DataFrames
-* Data visualization
-* Multi-file project organization
+- Variables and data types
+- Conditional statements
+- Loops
+- Functions
+- Lists and dictionaries
+- File handling
+- JSON serialization and deserialization
+- Exception handling
+- Input validation
+- Date handling
+- Modular programming
+- Data processing
+- Pandas DataFrames
+- Data visualization
+- Multi-file project organization
 
 ## Data Privacy
 
@@ -305,25 +322,23 @@ venv/
 transactions.json
 ```
 
-If `transactions.json` contains only intentionally created sample data, it may be included in the repository.
-
 ## Future Improvements
 
 Potential future extensions include:
 
-* SQLite or PostgreSQL database integration
-* Object-oriented architecture
-* REST API using FastAPI
-* Authentication and authorization
-* SQLAlchemy integration
-* Automated testing using Pytest
-* Docker containerization
-* Cloud deployment
-* Web-based frontend
-* AI-based expense categorization
-* Spending pattern prediction
-* Budget recommendations
-* Financial insights dashboard
+- SQLite or PostgreSQL database integration
+- Object-oriented architecture
+- REST API using FastAPI
+- Authentication and authorization
+- SQLAlchemy integration
+- Automated testing using Pytest
+- Docker containerization
+- Cloud deployment
+- Web-based frontend
+- AI-based expense categorization
+- Spending pattern prediction
+- Budget recommendations
+- Financial insights dashboard
 
 ## Learning Outcomes
 
@@ -331,16 +346,16 @@ This project provided practical experience in building a complete Python applica
 
 Key learning outcomes include:
 
-* Designing modular Python applications
-* Writing reusable functions
-* Managing persistent application data
-* Implementing input validation
-* Handling application errors
-* Working with JSON files
-* Using Pandas for structured data analysis
-* Using Matplotlib for data visualization
-* Organizing multi-module Python projects
-* Managing project dependencies
+- Designing modular Python applications
+- Writing reusable functions
+- Managing persistent application data
+- Implementing input validation
+- Handling application errors
+- Working with JSON files
+- Using Pandas for structured data analysis
+- Using Matplotlib for data visualization
+- Organizing multi-module Python projects
+- Managing project dependencies
 
 ## Project Status
 
@@ -356,10 +371,8 @@ B.Tech — Computer Science and Engineering (Cyber Security)
 
 Areas of Interest:
 
-* Python Development
-* Backend Engineering
-* Artificial Intelligence and Machine Learning
-* Data Science
-* Software Engineering
-
-
+- Python Development
+- Backend Engineering
+- Artificial Intelligence and Machine Learning
+- Data Science
+- Software Engineering
